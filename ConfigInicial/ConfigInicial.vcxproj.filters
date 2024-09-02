@@ -18,14 +18,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main_Modelado.cpp">
+    <ClCompile Include="Modelado_Jerarquico.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Shader.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Shader\core.frag">
@@ -34,5 +29,10 @@
     <None Include="Shader\core.vs">
       <Filter>Archivos de origen\Shader</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
