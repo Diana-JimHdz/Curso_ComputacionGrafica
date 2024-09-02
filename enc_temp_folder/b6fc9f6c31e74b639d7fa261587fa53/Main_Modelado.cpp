@@ -1,3 +1,5 @@
+// Jim茅nez Hern谩ndez Diana                             Practica 3: Modelo geometrico
+//Fecha de entrega: 30 de agosto de 2024
 #include<iostream>
 
 //#define GLEW_STATIC
@@ -25,7 +27,7 @@ float movZ=-5.0f;
 float rot = 0.0f;
 int main() {
 	glfwInit();
-	//Verificaci髇 de compatibilidad 
+	//Verificaci贸n de compatibilidad 
 	// Set all the required options for GLFW
 	/*glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -40,7 +42,7 @@ int main() {
 
 	glfwGetFramebufferSize(window, &screenWidth, &screenHeight);
 
-	//Verificaci髇 de errores de creacion  ventana
+	//Verificaci贸n de errores de creacion  ventana
 	if (nullptr == window)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
@@ -52,7 +54,7 @@ int main() {
 	glfwMakeContextCurrent(window);
 	glewExperimental = GL_TRUE;
 
-	//Verificaci髇 de errores de inicializaci髇 de glew
+	//Verificaci贸n de errores de inicializaci贸n de glew
 
 	if (GLEW_OK != glewInit()) {
 		std::cout << "Failed to initialise GLEW" << std::endl;
