@@ -99,7 +99,7 @@ int main( )
     // Load models
     Model dog((char*)"Models/RedDog.obj");
     Model ball((char*)"Models/fabric_balls.obj");
-    Model fon((char*)"Models/sofa.obj");
+    Model fon((char*)"Models/Modelos/queen_garden.obj");
     Model pillow((char*)"Models/Pillow.obj");
     glm::mat4 projection = glm::perspective( camera.GetZoom( ), ( float )SCREEN_WIDTH/( float )SCREEN_HEIGHT, 0.1f, 100.0f );
     
@@ -132,29 +132,30 @@ int main( )
 
        
         model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
-        model = glm::scale(model, glm::vec3(0.7f, 0.7f, 0.7f));
+        //model = glm::scale(model, glm::vec3(0.7f, 0.7f, 0.7f));
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+
         fon.Draw(shader);
-        ///*dog.Draw(shader);*/
-        // mas arriba y mas enfrente
-        model = glm::translate(model, glm::vec3(0.0f, 0.1f, 1.0f)); 
-        model = glm::scale(model, glm::vec3(1.0f,1.0f,1.0f)); 
-        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model)); 
-        dog.Draw(shader);
-        
-        model = glm::translate(model, glm::vec3(0.0f, -0.5f, 0.6f));
-        model= glm::scale(model, glm::vec3(0.01f, 0.01f, 0.01f)); 
-        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model)); 
-        ball.Draw(shader); 
+        /////*dog.Draw(shader);*/
+        //// mas arriba y mas enfrente
+        //model = glm::translate(model, glm::vec3(0.0f, 0.1f, 1.0f)); 
+        //model = glm::scale(model, glm::vec3(1.0f,1.0f,1.0f)); 
+        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model)); 
+        //dog.Draw(shader);
+        //
+        //model = glm::translate(model, glm::vec3(0.0f, -0.5f, 0.6f));
+        //model= glm::scale(model, glm::vec3(0.01f, 0.01f, 0.01f)); 
+        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model)); 
+        //ball.Draw(shader); 
 
-        model = glm::translate(model, glm::vec3(-8.0f, -0.5f, 5.0f));
-        model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
-        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        pillow.Draw(shader);
+        //model = glm::translate(model, glm::vec3(-8.0f, -0.5f, 5.0f));
+        //model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
+        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        //pillow.Draw(shader);
 
-        model = glm::translate(model, glm::vec3(4.0f, -0.5f, 10.0f));
-        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        pillow.Draw(shader);
+        //model = glm::translate(model, glm::vec3(4.0f, -0.5f, 10.0f));
+        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        //pillow.Draw(shader);
 
         // Swap the buffers
         glfwSwapBuffers( window );
