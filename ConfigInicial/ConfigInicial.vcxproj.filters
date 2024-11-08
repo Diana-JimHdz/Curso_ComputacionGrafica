@@ -18,10 +18,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Shader.h">
+    <ClInclude Include="Camera.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Camera.h">
+    <ClInclude Include="Texture.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
@@ -42,6 +51,12 @@
       <Filter>Archivos de origen\Shader</Filter>
     </None>
     <None Include="Shader\lighting.vs">
+      <Filter>Archivos de origen\Shader</Filter>
+    </None>
+    <None Include="Shader\SkyBox.frag">
+      <Filter>Archivos de origen\Shader</Filter>
+    </None>
+    <None Include="Shader\SkyBox.vs">
       <Filter>Archivos de origen\Shader</Filter>
     </None>
   </ItemGroup>
